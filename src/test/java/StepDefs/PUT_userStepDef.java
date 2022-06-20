@@ -43,7 +43,6 @@ public class PUT_userStepDef {
     @Then("validate fully updated user")
     public void validateFullyUpdatedUser() {
         JsonPath jsonPath=response.jsonPath();
-        System.out.println(ReadTxt.getId());
         Assert.assertEquals(ReadTxt.getId(),jsonPath.getString("id"));
         Assert.assertEquals(expectedData.get("name"),jsonPath.getString("name"));
         //name,email,status de eklenebilir

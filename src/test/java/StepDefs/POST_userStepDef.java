@@ -54,7 +54,6 @@ public class POST_userStepDef {
 //
          actualData= obj.readValue(response.asString(), HashMap.class);
          WriteToTxt.saveRegistrantData(actualData);
-         System.out.println(ReadTxt.getId());
 
     }
     @Then("user validates new user created")
